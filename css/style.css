@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+  
+body{
+    background-image: url(../img/fondopagina/b3c30da5ce1f74ea0530dd8c9003c74c.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+
+}
+p{
+    color: rgb(1, 169, 247);
+    font-family:'Roboto',sans-serif;
+    font-size: 20px;
+}
+nav ul li a{
+    color: rgb(9, 194, 33);
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+display:flex;
+    
+}
+h1{
+    color: rgb(252, 63, 6);
+    font-family: 'Roboto',sans-serif;
+    font-size: 40px;
+}
+.text-quienesomos{
+    display: flex;
+    display: block;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    text-align: center;
+
+}
+
+.text-italic{
+    font-style: italic;
+}
+.styleportada{
+    display: flex;
+    display: block;
+    width: 100vh;
+    height: 20vh;
+
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-top: 0;
+}
+.styleofertas{
+    display:flex;
+    margin-top: 10vh;
+    width: 100%;
+    height: 50%;
+
+}
+.text-ofertas{
+    color: blanchedalmond;
+    font-size: 40px;
+}
+.formulario{
+    color: rgb(16, 206, 10);
+    font-size: 18px;
+    
+    padding-top: 20vh;
+
+}
+h4{
+    color: rgb(253, 0, 0);
+    font-family:'Roboto',sans-serif;
+    font-size: 40px;
+}
+.productos{
+    color: white;
+    font-size: 16px;
+}
+
+.imginicial{
+    display:flex;
+}
+.text-li{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+h2{
+    color: rgb(20, 189, 5);
+    font-size: 40px;
+    align-items: center;
+  
+}
+#nav-flex{
+    display: flex;
+    flex: auto;
+}
+@media(min-width:0px) and (max-width:768px) {
+    .styleportada{
+        width: 100vh;
+        height: 20vh;
+    }
+    .styleofertas{
+        width: 100vh;
+        height: 40vh;
+    }
+    .centrar{
+        width: 100vh;
+        height: 30vh;
+    }
+    nav{
+        width: 100vh;
+    }
+    
+}
