@@ -1,16 +1,12 @@
 .ofertas{
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-around;
-    
-    
 }
 .tamproductos{
     width: 30vh;
     height: 30vh;
     margin-top: 10vh;
-    
 }
 .textofertas{
     text-align: center;
@@ -25,4 +21,8 @@
   
     width: 100vh;
     height: 60vh;
+}
+.img_portada{
+    width: 100%;
+    height: 70vh;
 }
