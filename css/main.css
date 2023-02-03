@@ -10780,12 +10780,16 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
+  height: 100%;
 }
 
 .tamproductos {
   width: 30vh;
   height: 30vh;
   margin-top: 10vh;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .textofertas {
@@ -10809,13 +10813,58 @@ textarea.form-control-lg {
   height: 70vh;
 }
 
+.detailling {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+
+.detailling_img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.detailling_img:hover {
+  cursor: crosshair;
+  width: 40%;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.cardtext_type {
+  font-family: "Times New Roman", Times, serif;
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 25px;
+}
+
+.card_size {
+  width: 30vh;
+  height: 30vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.card_size {
+  width: 90%;
+  height: 5vh;
+}
+
+.img_portada_calcos {
+  display: flex;
+  width: 50%;
+}
+
 @media (min-width: 0px) and (max-width: 768px) {
   .styleportada {
-    width: 100vh;
+    width: 100em;
     height: 20vh;
   }
   .styleofertas {
-    width: 100vh;
+    width: 100em;
     height: 40vh;
   }
   .centrar {
@@ -10824,6 +10873,28 @@ textarea.form-control-lg {
   }
   nav {
     width: 100vh;
+  }
+  .cardtext_type {
+    font-size: 20px;
+  }
+  .navstyle {
+    width: 30px;
+  }
+  .img_portada_calcos {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .tamproductos {
+    width: 35vh;
+    height: 35vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    margin-top: 6vh;
+  }
+  .card_size {
+    width: 90%;
+    height: 15vh;
   }
 }
 .text-quienesomos {
@@ -10853,14 +10924,10 @@ textarea.form-control-lg {
 }
 
 .styleportada {
-  width: 100vh;
-  height: 20vh;
-  margin-left: 2vh;
-  margin-bottom: 2vh;
-  margin-right: 2vh;
-  margin-top: 2vh;
+  /*@include flex-block();*/
   display: flex;
-  display: block;
+  width: 100%;
+  height: 20%;
 }
 
 .styleofertas {
@@ -10868,6 +10935,11 @@ textarea.form-control-lg {
   margin-top: 10vh;
   width: 100%;
   height: 50%;
+}
+
+.imgsvg {
+  width: 100%;
+  height: 100%;
 }
 
 h1, .h1 {
@@ -10892,6 +10964,51 @@ nav ul li a {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   display: flex;
+}
+
+.img404 {
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.error404 {
+  position: absolute;
+  margin-right: 50vh;
+  margin-top: 3vh;
+  margin-bottom: 50vh;
+  margin-left: 40%;
+  font-size: 5vh;
+  font-family: "Stencil";
+  color: blanchedalmond;
+  z-index: 1;
+}
+
+.nopagina {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  margin-right: 50vh;
+  margin-top: 7vh;
+  margin-bottom: 50vh;
+  margin-left: 40%;
+  font-size: 3vh;
+  color: blanchedalmond;
+  z-index: 1;
+}
+
+.navbarstyle {
+  display: flex;
+  width: 100%;
+}
+
+.button404 {
+  position: absolute;
+  z-index: 1;
+  width: 20vh;
+  height: 20vh;
 }
 
 /*# sourceMappingURL=main.css.map */

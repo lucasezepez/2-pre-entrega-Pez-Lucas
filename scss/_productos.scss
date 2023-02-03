@@ -2,11 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    
 }
 .tamproductos{
     width: 30vh;
     height: 30vh;
     margin-top: 10vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 .textofertas{
     text-align: center;
@@ -25,4 +31,46 @@
 .img_portada{
     width: 100%;
     height: 70vh;
+}
+.detailling{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    
+}
+.detailling_img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+
+}
+.detailling_img:hover{
+    cursor: crosshair;
+    width: 40%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.cardtext_type{
+    font-family: 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 25px;
+}
+.card_size{
+    width: 30vh;
+    height: 30vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+.card_size{
+    width: 90%;
+    height: 5vh;
+}
+.img_portada_calcos{
+    display: flex;
+    width: 50%;
+    
 }
